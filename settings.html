@@ -20,7 +20,8 @@
 <body>
     <!-- Preloader -->
     <div class="preloader">
-        <img src="../assets/images/logos/logo.jpg" alt="loader" class="lds-ripple img-fluid" />
+        <img src="../assets/images/logos/logo.jpg" alt="loader" class="load-img" />
+        <img src="assets/images/Spinner@1x-1.4s-200px-200px.svg" alt="loader" class="load-svg" />
     </div>
     <div id="main-wrapper">
         <div class="page-wrapper">
@@ -498,9 +499,7 @@
             <div class="offcanvas customizer offcanvas-end" tabindex="-1" id="offcanvasExample"
                 aria-labelledby="offcanvasExampleLabel">
                 <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
-                    <h4 class="offcanvas-title fw-semibold" id="offcanvasExampleLabel">
-                        Settings
-                    </h4>
+                    <img src="assets/images/logos/logo.jpg" alt="" class="side-logo">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body h-n80" data-simplebar>
@@ -513,35 +512,17 @@
                             <li class="nav-small-cap">
                                 <iconify-icon icon="solar:menu-dots-bold-duotone"
                                     class="nav-small-cap-icon fs-5"></iconify-icon>
-                                <span class="hide-menu">Home</span>
+                                <span class="hide-menu">الرئيسية</span>
                             </li>
                             <li class="sidebar-item">
-                                <a class="sidebar-link sidebar-link primary-hover-bg" href="" id="get-url"
+                                <a class="sidebar-link sidebar-link primary-hover-bg" href="index.html" id="get-url"
                                     aria-expanded="false">
                                     <span class="aside-icon p-2 bg-primary-subtle rounded-1">
                                         <iconify-icon icon="solar:screencast-2-line-duotone"
                                             class="fs-6"></iconify-icon>
                                     </span>
-                                    <span class="hide-menu ps-1">Dashboard</span>
+                                    <span class="hide-menu ps-1">الرئيسية</span>
                                 </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a class="sidebar-link sidebar-link success-hover-bg" href="../horizontal/index2.html"
-                                    aria-expanded="false">
-                                    <span class="aside-icon p-2 bg-success-subtle rounded-1">
-                                        <iconify-icon icon="solar:chart-line-duotone" class="fs-6"></iconify-icon>
-                                    </span>
-                                    <span class="hide-menu ps-1">Dashboard 2</span>
-                                </a>
-                            </li>
-
-                            <!-- ============================= -->
-                            <!-- Apps -->
-                            <!-- ============================= -->
-                            <li class="nav-small-cap">
-                                <iconify-icon icon="solar:menu-dots-bold-duotone"
-                                    class="nav-small-cap-icon fs-5"></iconify-icon>
-                                <span class="hide-menu">Apps</span>
                             </li>
                             <li class="sidebar-item">
                                 <a class="sidebar-link has-arrow success-hover-bg" href="javascript:void(0)"
@@ -550,60 +531,86 @@
                                         <iconify-icon icon="solar:smart-speaker-minimalistic-line-duotone"
                                             class="fs-6"></iconify-icon>
                                     </span>
-                                    <span class="hide-menu ps-1">Ecommerce</span>
+                                    <span class="hide-menu ps-1">الإعدادات</span>
                                 </a>
                                 <ul aria-expanded="false" class="collapse first-level">
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-shop.html" class="sidebar-link">
+                                        <a href="../settings/region.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">Shop One</span>
+                                            <span class="hide-menu">المناطق</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-shop2.html" class="sidebar-link">
+                                        <a href="../settings/nationalities.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">Shop Two</span>
+                                            <span class="hide-menu">الجنسيات</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-shop-detail.html" class="sidebar-link">
+                                        <a href="../settings/branches.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">Details One</span>
+                                            <span class="hide-menu">الفروع </span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-shop-detail2.html" class="sidebar-link">
+                                        <a href="../settings/governorates.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">Details Two</span>
+                                            <span class="hide-menu">المحافظات</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-product-list.html" class="sidebar-link">
+                                        <a href="../settings/ministries-percentages.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">List</span>
+                                            <span class="hide-menu">نسب الوزارات</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-checkout.html" class="sidebar-link">
+                                        <a href="../settings/ministries.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">Checkout</span>
+                                            <span class="hide-menu"> الوزارات
+                                            </span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-add-product.html" class="sidebar-link">
+                                        <a href="../settings/installment-percentages.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">Add Product</span>
+                                            <span class="hide-menu"> نسب التقسيط
+                                            </span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-edit-product.html" class="sidebar-link">
+                                        <a href="../settings/courts.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">Edit Product</span>
+                                            <span class="hide-menu">المحاكم</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="../settings/police-station.html" class="sidebar-link">
+                                            <span class="sidebar-icon"></span>
+                                            <span class="hide-menu"> المغافر </span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="../settings/banks.html" class="sidebar-link">
+                                            <span class="sidebar-icon"></span>
+                                            <span class="hide-menu"> البنوك
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="../settings/permission.html" class="sidebar-link">
+                                            <span class="sidebar-icon"></span>
+                                            <span class="hide-menu">الصلاحيات</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="../settings/employers.html" class="sidebar-link">
+                                            <span class="sidebar-icon"></span>
+                                            <span class="hide-menu">جهات العمل</span>
                                         </a>
                                     </li>
                                 </ul>
                             </li>
-
                             <li class="sidebar-item">
                                 <a class="sidebar-link has-arrow warning-hover-bg" href="javascript:void(0)"
                                     aria-expanded="false">
@@ -2395,74 +2402,135 @@
                     <!--  Header End -->
                     <div class="mb-3 overflow-hidden position-relative">
                         <div class="px-3">
+                            <h4 class="fs-6 mb-0">
+                                تعديل بيانات الملف الشخصي
+                            </h4>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb mb-0">
                                     <li class="breadcrumb-item">
-                                        <a href="..index.html">الرئيسية</a>
+                                        <a href="../horizontal/index.html">الرئيسية</a>
                                     </li>
-                                    <li class="breadcrumb-item" aria-current="page"> المنتجات</li>
+                                    <li class="breadcrumb-item" aria-current="page">  تعديل بيانات الملف الشخصي
+
+                                    </li>
                                 </ol>
                             </nav>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="d-flex align-items-center justify-content-between px-4 py-3 border-bottom">
-                            <h4 class="card-title mb-0">ارشيف طلب النقل</h4>
-                                <a class="btn me-1 mb-1 bg-primary-subtle text-primary px-4 fs-4 " 
-                                href="../">
-                    عودة </a>
-                        </div>
+
                         <div class="card-body">
-                            <div class="table-responsive pb-4">
-                                <table id="all" class="table table-bordered border text-nowrap align-middle">
-                                    <thead>
-                                        <tr>
-                                            <th>رقم طلب النقل</th>
-                                            <th>عدد المنتجات</th>
-                                            <th>المنتجات</th>
-                                            <th>التاريخ</th>
-                                            <th>المسلم</th>
-                                            <th>الناقل</th>
-                                            <th>استلام</th>
-                                            <th>مشاهدة طلب النقل</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>12345</td>
-                                            <td>10</td>
-                                            <td class="text-wrap">	iphone-ايفون 13 بروماكس 256 جيجا =
-                                                ( 352990480670328 )
-                                                iphone-ايفون 13 بروماكس 256 جيجا =
-                                                ( 353393512772338 )
-                                                iphone-ايفون 13 بروماكس 256 جيجا =
-                                                ( 359577625063981 )
-                                                iphone-ايفون 13 بروماكس 256 جيجا =
-                                                ( 356579553733208 )
-                                                iphone-ايفون 13 بروماكس 256 جيجا =
-                                                ( 358754211000807 )
-                                                iphone-ايفون 13 بروماكس 256 جيجا =
-                                                ( 353240583704189 )
-                                                iphone-ايفون 13 128جيجا</td>
-                                            <td>2024-11-08</td>
-                                            <td>أحمد</td>
-                                            <td>شركة الشحن</td>
-                                            <td>
-                                                <p class="btn btn-success btn-sm rounded-0 d-block">تم التسليم
+                            <div class="row">
+                                <div class="col-lg-6 d-flex align-items-stretch">
+                                    <div class="card w-100 border position-relative overflow-hidden">
+                                        <div class="card-body p-4">
+                                            <h4 class="card-title">تغيير الملف الشخصي
+                                            </h4>
+                                            <p class="card-subtitle mb-4">قم بتغيير الصورة الشخصية الخاصة بك من هنا
                                             </p>
-                                                ملاك
-                                            </td>
-                                            <td>
-                                                <div class="d-flex flex-column">
-                                                <a href="#" class="btn-primary btn mb-3 btn-sm rounded-pill">مشاهدة طلب النقل</a>
-                                                <a href="#" class="btn-primary btn btn-sm  rounded-pill">نموذج الاستلام  </a>
+                                            <div class="text-center">
+                                                <img src="../assets/images/profile/user-1.jpg" alt="spike-img"
+                                                    class="img-fluid rounded-circle" width="120" height="120">
+                                                <div
+                                                    class="d-flex align-items-center justify-content-center my-4 gap-6">
+                                                    <button class="btn btn-primary">رفع الصورة</button>
+                                                    <button class="btn bg-danger-subtle text-danger">إعادة ضبط الصورة 
+                                                    </button>
+                                                </div>
+                                                <p class="mb-0">مسموح بـ JPG أو GIF أو PNG. الحجم الأقصى 800 كيلو</p>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 d-flex align-items-stretch">
+                                    <div class="card w-100 border position-relative overflow-hidden">
+                                        <div class="card-body p-4">
+                                            <h4 class="card-title"> تغيير كلمة المرور</h4>
+                                            <p class="card-subtitle mb-4">لتغيير كلمة المرور الخاصة بك، يرجى التأكيد هنا
+                                            </p>
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1" class="form-label"> كلمة المرور
+                                                        الحالي</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword1" value="12345678910">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword2" class="form-label"> كلمة المرور
+                                                        الجديدة</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword2" value="12345678910">
+                                                </div>
+                                                <div>
+                                                    <label for="exampleInputPassword3" class="form-label"> تأكيد كلمة
+                                                        المرور</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword3" value="12345678910">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card w-100 border position-relative overflow-hidden mb-0">
+                                        <div class="card-body p-4">
+                                            <h4 class="card-title">تفاصيل البيانات الشخصية</h4>
+                                            <p class="card-subtitle mb-4">لتغيير بياناتك الشخصية، قم بالتحرير والحفظ من
+                                                هنا
+                                            </p>
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputtext"
+                                                                class="form-label">الإسم</label>
+                                                            <input type="text" class="form-control"
+                                                                id="exampleInputtext" placeholder="تقى ">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputtext1" class="form-label">البريد
+                                                                الإلكتروني</label>
+                                                            <input type="email" class="form-control"
+                                                                id="exampleInputtext1" placeholder="info@modernize.com">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputtext2" class="form-label">
+                                                                اللقب</label>
+                                                            <input type="text" class="form-control"
+                                                                id="exampleInputtext2" placeholder="رأفت">
+                                                        </div>
 
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputtext3" class="form-label">رقم
+                                                                الهاتف</label>
+                                                            <input type="text" class="form-control"
+                                                                id="exampleInputtext3" placeholder="+91 12345 65478">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div>
+                                                            <label for="exampleInputtext4"
+                                                                class="form-label">العنوان</label>
+                                                            <input type="text" class="form-control"
+                                                                id="exampleInputtext4"
+                                                                placeholder="814 Howard Street, 120065, India">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-end mt-4 gap-6">
+                                                            <button class="btn btn-primary">حفظ</button>
+                                                            <button
+                                                                class="btn bg-danger-subtle text-danger">إلغاء</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2473,6 +2541,9 @@
         </div>
 
     </div>
+
+
+
 
     <script src="../assets/js/vendor.min.js"></script>
     <!-- Import Js Files -->
