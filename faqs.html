@@ -20,7 +20,8 @@
 <body>
     <!-- Preloader -->
     <div class="preloader">
-        <img src="../assets/images/logos/logo.jpg" alt="loader" class="lds-ripple img-fluid" />
+        <img src="../assets/images/logos/logo.jpg" alt="loader" class="load-img" />
+        <img src="assets/images/Spinner@1x-1.4s-200px-200px.svg" alt="loader" class="load-svg" />
     </div>
     <div id="main-wrapper">
         <div class="page-wrapper">
@@ -498,9 +499,7 @@
             <div class="offcanvas customizer offcanvas-end" tabindex="-1" id="offcanvasExample"
                 aria-labelledby="offcanvasExampleLabel">
                 <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
-                    <h4 class="offcanvas-title fw-semibold" id="offcanvasExampleLabel">
-                        Settings
-                    </h4>
+                    <img src="assets/images/logos/logo.jpg" alt="" class="side-logo">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body h-n80" data-simplebar>
@@ -513,35 +512,17 @@
                             <li class="nav-small-cap">
                                 <iconify-icon icon="solar:menu-dots-bold-duotone"
                                     class="nav-small-cap-icon fs-5"></iconify-icon>
-                                <span class="hide-menu">Home</span>
+                                <span class="hide-menu">الرئيسية</span>
                             </li>
                             <li class="sidebar-item">
-                                <a class="sidebar-link sidebar-link primary-hover-bg" href="" id="get-url"
+                                <a class="sidebar-link sidebar-link primary-hover-bg" href="index.html" id="get-url"
                                     aria-expanded="false">
                                     <span class="aside-icon p-2 bg-primary-subtle rounded-1">
                                         <iconify-icon icon="solar:screencast-2-line-duotone"
                                             class="fs-6"></iconify-icon>
                                     </span>
-                                    <span class="hide-menu ps-1">Dashboard</span>
+                                    <span class="hide-menu ps-1">الرئيسية</span>
                                 </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a class="sidebar-link sidebar-link success-hover-bg" href="../horizontal/index2.html"
-                                    aria-expanded="false">
-                                    <span class="aside-icon p-2 bg-success-subtle rounded-1">
-                                        <iconify-icon icon="solar:chart-line-duotone" class="fs-6"></iconify-icon>
-                                    </span>
-                                    <span class="hide-menu ps-1">Dashboard 2</span>
-                                </a>
-                            </li>
-
-                            <!-- ============================= -->
-                            <!-- Apps -->
-                            <!-- ============================= -->
-                            <li class="nav-small-cap">
-                                <iconify-icon icon="solar:menu-dots-bold-duotone"
-                                    class="nav-small-cap-icon fs-5"></iconify-icon>
-                                <span class="hide-menu">Apps</span>
                             </li>
                             <li class="sidebar-item">
                                 <a class="sidebar-link has-arrow success-hover-bg" href="javascript:void(0)"
@@ -550,60 +531,86 @@
                                         <iconify-icon icon="solar:smart-speaker-minimalistic-line-duotone"
                                             class="fs-6"></iconify-icon>
                                     </span>
-                                    <span class="hide-menu ps-1">Ecommerce</span>
+                                    <span class="hide-menu ps-1">الإعدادات</span>
                                 </a>
                                 <ul aria-expanded="false" class="collapse first-level">
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-shop.html" class="sidebar-link">
+                                        <a href="../settings/region.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">Shop One</span>
+                                            <span class="hide-menu">المناطق</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-shop2.html" class="sidebar-link">
+                                        <a href="../settings/nationalities.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">Shop Two</span>
+                                            <span class="hide-menu">الجنسيات</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-shop-detail.html" class="sidebar-link">
+                                        <a href="../settings/branches.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">Details One</span>
+                                            <span class="hide-menu">الفروع </span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-shop-detail2.html" class="sidebar-link">
+                                        <a href="../settings/governorates.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">Details Two</span>
+                                            <span class="hide-menu">المحافظات</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-product-list.html" class="sidebar-link">
+                                        <a href="../settings/ministries-percentages.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">List</span>
+                                            <span class="hide-menu">نسب الوزارات</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-checkout.html" class="sidebar-link">
+                                        <a href="../settings/ministries.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">Checkout</span>
+                                            <span class="hide-menu"> الوزارات
+                                            </span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-add-product.html" class="sidebar-link">
+                                        <a href="../settings/installment-percentages.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">Add Product</span>
+                                            <span class="hide-menu"> نسب التقسيط
+                                            </span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/eco-edit-product.html" class="sidebar-link">
+                                        <a href="../settings/courts.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">Edit Product</span>
+                                            <span class="hide-menu">المحاكم</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="../settings/police-station.html" class="sidebar-link">
+                                            <span class="sidebar-icon"></span>
+                                            <span class="hide-menu"> المغافر </span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="../settings/banks.html" class="sidebar-link">
+                                            <span class="sidebar-icon"></span>
+                                            <span class="hide-menu"> البنوك
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="../settings/permission.html" class="sidebar-link">
+                                            <span class="sidebar-icon"></span>
+                                            <span class="hide-menu">الصلاحيات</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="../settings/employers.html" class="sidebar-link">
+                                            <span class="sidebar-icon"></span>
+                                            <span class="hide-menu">جهات العمل</span>
                                         </a>
                                     </li>
                                 </ul>
                             </li>
-
                             <li class="sidebar-item">
                                 <a class="sidebar-link has-arrow warning-hover-bg" href="javascript:void(0)"
                                     aria-expanded="false">
@@ -2395,62 +2402,145 @@
                     <!--  Header End -->
                     <div class="mb-3 overflow-hidden position-relative">
                         <div class="px-3">
+                            <h4 class="fs-6 mb-0">
+                                الأسئلة المتكررة
+
+                            </h4>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb mb-0">
                                     <li class="breadcrumb-item">
-                                        <a href="..index.html">الرئيسية</a>
+                                        <a href="../horizontal/index.html">الرئيسية</a>
                                     </li>
-                                    <li class="breadcrumb-item" aria-current="page"> المنتجات
+                                    <li class="breadcrumb-item" aria-current="page"> الأسئلة المتكررة
                                     </li>
                                 </ol>
                             </nav>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <div class="d-flex align-items-center justify-content-between px-4 py-3 border-bottom">
-                            <h4 class="card-title mb-0"> المنتجات
-                            </h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive pb-4">
-                                <table id="all"
-                                    class="table table-bordered table-striped border text-nowrap align-middle">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th>م</th>
-                                            <th>الموديل</th>
-                                            <th>الشركة الموردة</th>
-                                            <th>السريال</th>
-                                            <th>رقم طلب الشراء</th>
-                                            <th>الباركود</th>
-                                            <th>نقل</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>ايفون 15 بروماكس 256</td>
-                                            <td>350091877311329</td>
-                                            <td>1020</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td><button class="btn btn-primary btn-sm rounded-pill">نقل</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>ايفون 15 بروماكس 256</td>
-                                            <td>359473646851747</td>
-                                            <td>1020</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td><button class="btn btn-primary btn-sm rounded-pill">نقل</button></td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="text-center mb-7">
+                                <h3 class="fw-semibold">الأسئلة المتكررة
+                                </h3>
+                                <p class="fw-normal mb-0 fs-4">تعرف على المزيد حول لوحة تحكم المشرف الجاهزة للاستخدام
+                                </p>
                             </div>
+                            <div class="accordion accordion-flush mb-5 card position-relative overflow-hidden"
+                                id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed fs-4 fw-semibold shadow-none"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            ما هي لوحة تحكم المشرف؟
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body fw-normal">
+                                            لوحة تحكم المشرف هي الواجهة الخلفية لموقع ويب أو تطبيق
+                                            يساعد على إدارة
+                                            المحتوى والإعدادات العامة للموقع. يتم استخدامه على نطاق واسع من قبل أصحاب
+                                            الموقع
+                                            لتتبع
+                                            موقعهم الإلكتروني،
+                                            إجراء تغييرات على محتواها، وأكثر من ذلك.
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed fs-4 fw-semibold shadow-none"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            ما الذي يجب أن يتضمنه قالب لوحة تحكم المشرف؟
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body fw-normal">
+                                            يجب أن يتضمن قالب لوحة تحكم المشرف تصميمًا صديقًا للمستخدم وتحسين محركات
+                                            البحث مع ملف
+                                            مجموعة متنوعة من المكونات
+                                            و
+                                            تصميمات التطبيقات للمساعدة في إنشاء تطبيق الويب الخاص بك بسهولة. هذا
+                                            يمكن أن تشمل
+                                            التخصيص
+                                            الخيارات والدعم الفني وحوالي 6 أشهر من التحديثات المستقبلية.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed fs-4 fw-semibold shadow-none"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                            aria-controls="flush-collapseThree">
+                                            لماذا يجب أن أشتري قوالب الإدارة من Wrappixel؟
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body fw-normal">
+                                            يقدم Wrappixel قوالب عالية الجودة سهلة الاستخدام وكاملة
+                                            قابل للتخصيص. مع أكثر
+                                            101,801
+                                            عملاء سعداء وموثوقون من قبل أكثر من 10,000 شركة. يتم التعرف على Wrappixel
+                                            على أنه
+                                            الرائدة على الانترنت
+                                            مصدر
+                                            لشراء قوالب المشرف.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingfour">
+                                        <button class="accordion-button collapsed fs-4 fw-semibold shadow-none"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour"
+                                            aria-expanded="false" aria-controls="flush-collapsefour">
+                                            هل يقدم Wrappixel ضمان استعادة الأموال؟
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapsefour" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body fw-normal">
+                                            لا يوجد ضمان لاستعادة الأموال في معظم الشركات، ولكن إذا كنت غير سعيد
+                                            مع منتجاتنا،
+                                            التفاف بكسل
+                                            يمنحك ضمان استرداد الأموال بنسبة 100%.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-primary-subtle rounded-2">
+                        <div class="card-body text-center">
+                            <div class="d-flex align-items-center justify-content-center mb-4 pt-8">
+                                <a href="javascript:void(0)">
+                                    <img src="../assets/images/profile/user-3.jpg"
+                                        class="rounded-circle me-n2 card-hover border border-2 border-white" width="44"
+                                        height="44">
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <img src="../assets/images/profile/user-2.jpg"
+                                        class="rounded-circle me-n2 card-hover border border-2 border-white" width="44"
+                                        height="44">
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <img src="../assets/images/profile/user-4.jpg"
+                                        class="rounded-circle me-n2 card-hover border border-2 border-white" width="44"
+                                        height="44">
+                                </a>
+                            </div>
+                            <h3 class="fw-semibold">لا تزال لديك أسئلة
+                            </h3>
+                            <p class="fw-normal mb-4 fs-4">لا يمكنك العثور على رالإجابة التي تبحث عنها؟ يرجى الدردشة على
+                                ودية لدينا
+                                فريق.</p>
+                            <a href="javascript:void(0)" class="btn btn-primary mb-8">الدردشة معنا
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -2460,6 +2550,10 @@
         </div>
 
     </div>
+
+
+
+
     <script src="../assets/js/vendor.min.js"></script>
     <!-- Import Js Files -->
     <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
