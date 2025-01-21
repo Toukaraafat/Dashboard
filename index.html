@@ -484,7 +484,7 @@
       <div class="offcanvas customizer offcanvas-end" tabindex="-1" id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel">
         <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
-     <img src="assets/images/logos/logo.jpg" alt="" class="side-logo">
+          <img src="assets/images/logos/logo.jpg" alt="" class="side-logo">
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body h-n80" data-simplebar>
@@ -499,7 +499,8 @@
                 <span class="hide-menu">الرئيسية</span>
               </li>
               <li class="sidebar-item">
-                <a class="sidebar-link sidebar-link primary-hover-bg" href="index.html" id="get-url" aria-expanded="false">
+                <a class="sidebar-link sidebar-link primary-hover-bg" href="index.html" id="get-url"
+                  aria-expanded="false">
                   <span class="aside-icon p-2 bg-primary-subtle rounded-1">
                     <iconify-icon icon="solar:screencast-2-line-duotone" class="fs-6"></iconify-icon>
                   </span>
@@ -2261,6 +2262,122 @@
             </div>
           </header>
           <!--  Header End -->
+          <div class="row">
+            <div class="col-lg-8 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body border-bottom position-relative">
+                  <h4 class="card-title mb-1">بيانات العميل </h4>
+                  <p class="card-subtitle mb-0">You have done 38% more sales</p>
+                  <div class="mt-6">
+                    <ul class="list-unstyled mb-0">
+                      <li class="d-flex align-items-center mb-9">
+                        <div
+                          class="bg-success-subtle p-6 ms-3 rounded-circle d-flex align-items-center justify-content-center">
+                          <iconify-icon icon="solar:cart-5-line-duotone" class="fs-7 text-success"></iconify-icon>
+                        </div>
+                        <div>
+                          <h6 class="mb-1 fs-4">64 عدد المعاملات</h6>
+                        </div>
+                      </li>
+                      <li class="d-flex align-items-center mb-9">
+                        <div
+                          class="bg-warning-subtle p-6 ms-3 rounded-circle d-flex align-items-center justify-content-center">
+                          <iconify-icon icon="solar:pause-line-duotone" class="fs-6 text-warning"></iconify-icon>
+                        </div>
+                        <div>
+                          <h6 class="mb-1 fs-4">4 عدد الاقساط المدفوعة</h6>
+                        </div>
+                      </li>
+                      <li class="d-flex align-items-center mb-9">
+                        <div
+                          class="bg-indigo-subtle p-6 ms-3 rounded-circle d-flex align-items-center justify-content-center">
+                          <iconify-icon icon="solar:bicycling-round-bold-duotone"
+                            class="fs-7 text-indigo"></iconify-icon>
+                        </div>
+                        <div>
+                          <h6 class="mb-1 fs-4">12 عدد الاقساط المتأخرة</h6>
+                        </div>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <div
+                          class="bg-success-subtle p-6 ms-3 rounded-circle d-flex align-items-center justify-content-center">
+                          <iconify-icon icon="solar:cart-5-line-duotone" class="fs-7 text-success"></iconify-icon>
+                        </div>
+                        <div>
+                          <h6 class="mb-1 fs-4">64 عدد المعاملات</h6>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="man-working-on-laptop">
+                      <img src="../assets/images/backgrounds/man-working-on-laptop.png" alt="spike-img"
+                        class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body pb-2">
+                  <div class="d-flex align-items-baseline justify-content-between">
+                    <div>
+                      <h4 class="card-title mb-1">Total Orders</h4>
+                      <p class="card-subtitle mb-0">Weekly Order Updates</p>
+                    </div>
+                    <select class="form-select fw-bold w-auto shadow-none">
+                      <option value="1">This Week</option>
+                      <option value="2">April 2024</option>
+                      <option value="3">May 2024</option>
+                      <option value="4">June 2024</option>
+                    </select>
+                  </div>
+                  <div id="netsells" class="mx-n6"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-flex align-items-stretch">
+              <div class="d-block w-100">
+                <div class="card w-100">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <h4 class="card-title mb-1">Profit</h4>
+                        <p class="card-subtitle">Years</p>
+                      </div>
+                      <div>
+                        <h4 class="card-title mb-1 text-end">432</h4>
+                        <span
+                          class="badge rounded-pill bg-success-subtle text-success border-success border text-end">+26.5%</span>
+                      </div>
+                    </div>
+                    <div id="products" class="my-8"></div>
+                    <p class="mb-0 text-center">$18k Profit more than last years</p>
+                  </div>
+                </div>
+                <div class="card w-100">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <h4 class="card-title mb-1">Customers</h4>
+                        <p class="card-subtitle">Last 7 Days</p>
+                      </div>
+                      <div>
+                        <h4 class="card-title mb-1 text-end">6,380</h4>
+                        <span
+                          class="badge rounded-pill bg-success-subtle text-success border-success border text-end">+26.5%</span>
+                      </div>
+                    </div>
+                    <div id="customers" class="my-5"></div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <p class="mb-0">April 07 - April 14</p>
+                      <p class="mb-0">6,380</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="mb-0">Last Week</p>
+                      <p class="mb-0">4,298</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
 
         </div>
       </div>
@@ -2269,7 +2386,6 @@
     </div>
 
   </div>
-
 
 
 
@@ -2285,8 +2401,10 @@
 
   <!-- solar icons -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-  <script src="../assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
-  <script src="../assets/js/datatable/datatable.init.js"></script>
+  <script src="../assets/libs/jvectormap/jquery-jvectormap.min.js"></script>
+  <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="../assets/js/extra-libs/jvectormap/jquery-jvectormap-us-aea-en.js"></script>
+  <script src="../assets/js/dashboards/dashboard.js"></script>
 </body>
 
 </html>

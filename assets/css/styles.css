@@ -48943,7 +48943,7 @@ html[dir=rtl] .pulse {
     left: 2px
 }
 
-html[dir=rtl] .man-working-on-laptop {
+html[dir="rtl"] .man-working-on-laptop {
     right: unset;
     left: 0;
     transform: scaleX(-1)
@@ -52685,7 +52685,7 @@ a {
 
 .man-working-on-laptop {
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: 0
 }
 
