@@ -16,13 +16,15 @@
     <title>Electron</title>
     <link rel="stylesheet" href="../assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
 </head>
+<style>
+    .notification-img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+    }
+</style>
 
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <img src="../assets/images/logos/logo.jpg" alt="loader" class="load-img" />
-        <img src="assets/images/Spinner@1x-1.4s-200px-200px.svg" alt="loader" class="load-svg" />
-    </div>
     <div id="main-wrapper">
         <div class="page-wrapper">
             <aside class="left-sidebar with-horizontal">
@@ -218,7 +220,7 @@
                                             </span>
                                         </a>
                                     </li>
-                                    <!-- Exams -->
+                                    <!-- Exame -->
                                     <li class="sidebar-item">
                                         <a href="../legal-affairs/not-received-acknowledgments.html"
                                             class="sidebar-link">
@@ -457,7 +459,7 @@
                                             </span>
                                         </a>
                                     </li>
-                                    <!-- Exams -->
+                                    <!-- Exame -->
                                     <li class="sidebar-item">
                                         <a href="#" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
@@ -499,7 +501,9 @@
             <div class="offcanvas customizer offcanvas-end" tabindex="-1" id="offcanvasExample"
                 aria-labelledby="offcanvasExampleLabel">
                 <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
-                    <img src="assets/images/logos/logo.jpg" alt="" class="side-logo">
+                    <h4 class="offcanvas-title fw-semibold" id="offcanvasExampleLabel">
+                        Settings
+                    </h4>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body h-n80" data-simplebar>
@@ -512,17 +516,35 @@
                             <li class="nav-small-cap">
                                 <iconify-icon icon="solar:menu-dots-bold-duotone"
                                     class="nav-small-cap-icon fs-5"></iconify-icon>
-                                <span class="hide-menu">الرئيسية</span>
+                                <span class="hide-menu">Home</span>
                             </li>
                             <li class="sidebar-item">
-                                <a class="sidebar-link sidebar-link primary-hover-bg" href="index.html" id="get-url"
+                                <a class="sidebar-link sidebar-link primary-hover-bg" href="" id="get-url"
                                     aria-expanded="false">
                                     <span class="aside-icon p-2 bg-primary-subtle rounded-1">
                                         <iconify-icon icon="solar:screencast-2-line-duotone"
                                             class="fs-6"></iconify-icon>
                                     </span>
-                                    <span class="hide-menu ps-1">الرئيسية</span>
+                                    <span class="hide-menu ps-1">Dashboard</span>
                                 </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link sidebar-link success-hover-bg" href="../horizontal/index2.html"
+                                    aria-expanded="false">
+                                    <span class="aside-icon p-2 bg-success-subtle rounded-1">
+                                        <iconify-icon icon="solar:chart-line-duotone" class="fs-6"></iconify-icon>
+                                    </span>
+                                    <span class="hide-menu ps-1">Dashboard 2</span>
+                                </a>
+                            </li>
+
+                            <!-- ============================= -->
+                            <!-- Apps -->
+                            <!-- ============================= -->
+                            <li class="nav-small-cap">
+                                <iconify-icon icon="solar:menu-dots-bold-duotone"
+                                    class="nav-small-cap-icon fs-5"></iconify-icon>
+                                <span class="hide-menu">Apps</span>
                             </li>
                             <li class="sidebar-item">
                                 <a class="sidebar-link has-arrow success-hover-bg" href="javascript:void(0)"
@@ -531,86 +553,60 @@
                                         <iconify-icon icon="solar:smart-speaker-minimalistic-line-duotone"
                                             class="fs-6"></iconify-icon>
                                     </span>
-                                    <span class="hide-menu ps-1">الإعدادات</span>
+                                    <span class="hide-menu ps-1">Ecommerce</span>
                                 </a>
                                 <ul aria-expanded="false" class="collapse first-level">
                                     <li class="sidebar-item">
-                                        <a href="../settings/region.html" class="sidebar-link">
+                                        <a href="../horizontal/eco-shop.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">المناطق</span>
+                                            <span class="hide-menu">Shop One</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../settings/nationalities.html" class="sidebar-link">
+                                        <a href="../horizontal/eco-shop2.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">الجنسيات</span>
+                                            <span class="hide-menu">Shop Two</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../settings/branches.html" class="sidebar-link">
+                                        <a href="../horizontal/eco-shop-detail.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">الفروع </span>
+                                            <span class="hide-menu">Details One</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../settings/governorates.html" class="sidebar-link">
+                                        <a href="../horizontal/eco-shop-detail2.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">المحافظات</span>
+                                            <span class="hide-menu">Details Two</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../settings/ministries-percentages.html" class="sidebar-link">
+                                        <a href="../horizontal/eco-product-list.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">نسب الوزارات</span>
+                                            <span class="hide-menu">List</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../settings/ministries.html" class="sidebar-link">
+                                        <a href="../horizontal/eco-checkout.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu"> الوزارات
-                                            </span>
+                                            <span class="hide-menu">Checkout</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../settings/installment-percentages.html" class="sidebar-link">
+                                        <a href="../horizontal/eco-add-product.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu"> نسب التقسيط
-                                            </span>
+                                            <span class="hide-menu">Add Product</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="../settings/courts.html" class="sidebar-link">
+                                        <a href="../horizontal/eco-edit-product.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">المحاكم</span>
-                                        </a>
-                                    </li>
-                                    <li class="sidebar-item">
-                                        <a href="../settings/police-station.html" class="sidebar-link">
-                                            <span class="sidebar-icon"></span>
-                                            <span class="hide-menu"> المغافر </span>
-                                        </a>
-                                    </li>
-                                    <li class="sidebar-item">
-                                        <a href="../settings/banks.html" class="sidebar-link">
-                                            <span class="sidebar-icon"></span>
-                                            <span class="hide-menu"> البنوك
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="sidebar-item">
-                                        <a href="../settings/permission.html" class="sidebar-link">
-                                            <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">الصلاحيات</span>
-                                        </a>
-                                    </li>
-                                    <li class="sidebar-item">
-                                        <a href="../settings/employers.html" class="sidebar-link">
-                                            <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">جهات العمل</span>
+                                            <span class="hide-menu">Edit Product</span>
                                         </a>
                                     </li>
                                 </ul>
                             </li>
+
                             <li class="sidebar-item">
                                 <a class="sidebar-link has-arrow warning-hover-bg" href="javascript:void(0)"
                                     aria-expanded="false">
@@ -1139,7 +1135,7 @@
                                     </li>
 
                                     <li class="sidebar-item">
-                                        <a href="../horizontal/ui-card-customs.html" class="sidebar-link">
+                                        <a href="../horizontal/ui-card-custome.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
                                             <span class="hide-menu">Custom Cards</span>
                                         </a>
@@ -1211,12 +1207,12 @@
                             </li>
 
                             <!-- ============================= -->
-                            <!-- Forms -->
+                            <!-- Forme -->
                             <!-- ============================= -->
                             <li class="nav-small-cap">
                                 <iconify-icon icon="solar:menu-dots-bold-duotone"
                                     class="nav-small-cap-icon fs-5"></iconify-icon>
-                                <span class="hide-menu">Forms</span>
+                                <span class="hide-menu">Forme</span>
                             </li>
 
                             <!-- =================== -->
@@ -1234,7 +1230,7 @@
                                     <li class="sidebar-item">
                                         <a href="../horizontal/form-inputs.html" class="sidebar-link">
                                             <span class="sidebar-icon"></span>
-                                            <span class="hide-menu">Forms Input</span>
+                                            <span class="hide-menu">Forme Input</span>
                                         </a>
                                     </li>
 
@@ -2077,7 +2073,7 @@
                                             </div>
                                         </a>
                                         <ul
-                                            class="navbar-nav flex-row ms-auto align-items-center justify-content-center">
+                                            class="navbar-nav flex-row me-auto align-items-center justify-content-center">
                                             <li
                                                 class="nav-item dropdown nav-icon-hover-bg rounded-circle d-flex d-lg-none">
                                                 <a class="nav-link position-relative" href="javascript:void(0)"
@@ -2198,7 +2194,7 @@
                                                             class="form-control rounded-3 py-2 ps-5 text-dark"
                                                             placeholder="ابحث هنا ...">
                                                         <iconify-icon icon="solar:magnifer-linear"
-                                                            class="text-dark position-absolute top-50 start-0 translate-middle-y text-dark ms-3"></iconify-icon>
+                                                            class="text-dark position-absolute top-50 start-0 translate-middle-y text-dark me-3"></iconify-icon>
                                                     </form>
                                                 </a>
                                                 <div class="dropdown-menu content-dd dropdown-menu-end dropdown-menu-animate-up"
@@ -2309,7 +2305,7 @@
                                             <!-- start profile Dropdown -->
                                             <!-- ------------------------------- -->
                                             <li class="nav-item dropdown">
-                                                <a class="nav-link position-relative ms-6" href="javascript:void(0)"
+                                                <a class="nav-link position-relative me-6" href="javascript:void(0)"
                                                     id="drop1" aria-expanded="false">
                                                     <div class="d-flex align-items-center flex-shrink-0">
                                                         <div class="user-profile me-sm-3 me-2">
@@ -2342,7 +2338,7 @@
                                                                     <iconify-icon icon="solar:wallet-2-line-duotone"
                                                                         class="fs-7"></iconify-icon>
                                                                 </span>
-                                                                <div class="w-100 ps-3 ms-1">
+                                                                <div class="w-100 ps-3 me-1">
                                                                     <h5 class="mb-0 mt-1 fs-4 fw-normal">
                                                                         My Profile
                                                                     </h5>
@@ -2359,7 +2355,7 @@
                                                                         icon="solar:shield-minimalistic-line-duotone"
                                                                         class="fs-7"></iconify-icon>
                                                                 </span>
-                                                                <div class="w-100 ps-3 ms-1">
+                                                                <div class="w-100 ps-3 me-1">
                                                                     <h5 class="mb-0 mt-1 fs-4 fw-normal">My Inbox</h5>
                                                                     <span class="fs-3 d-block mt-1 text-muted">Messages
                                                                         & Emails</span>
@@ -2373,7 +2369,7 @@
                                                                     <iconify-icon icon="solar:card-2-line-duotone"
                                                                         class="fs-7"></iconify-icon>
                                                                 </span>
-                                                                <div class="w-100 ps-3 ms-1">
+                                                                <div class="w-100 ps-3 me-1">
                                                                     <h5 class="mb-0 mt-1 fs-4 fw-normal">My Task</h5>
                                                                     <span class="fs-3 d-block mt-1 text-muted">To-do and
                                                                         Daily
@@ -2402,17 +2398,12 @@
                     <!--  Header End -->
                     <div class="mb-3 overflow-hidden position-relative">
                         <div class="px-3">
-                            <h4 class="fs-6 mb-0">
-                                تعديل بيانات الملف الشخصي
-                            </h4>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb mb-0">
                                     <li class="breadcrumb-item">
-                                        <a href="../horizontal/index.html">الرئيسية</a>
+                                        <a href="..index.html">الرئيسية</a>
                                     </li>
-                                    <li class="breadcrumb-item" aria-current="page">  تعديل بيانات الملف الشخصي
-
-                                    </li>
+                                    <li class="breadcrumb-item" aria-current="page"> الإشعارات </li>
                                 </ol>
                             </nav>
                         </div>
@@ -2420,125 +2411,159 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-lg-6 d-flex align-items-stretch">
-                                    <div class="card w-100 border position-relative overflow-hidden">
-                                        <div class="card-body p-4">
-                                            <h4 class="card-title">تغيير الملف الشخصي
-                                            </h4>
-                                            <p class="card-subtitle mb-4">قم بتغيير الصورة الشخصية الخاصة بك من هنا
-                                            </p>
-                                            <div class="text-center">
-                                                <img src="../assets/images/profile/user-1.jpg" alt="spike-img"
-                                                    class="img-fluid rounded-circle" width="120" height="120">
-                                                <div
-                                                    class="d-flex align-items-center justify-content-center my-4 gap-6">
-                                                    <button class="btn btn-primary">رفع الصورة</button>
-                                                    <button class="btn bg-danger-subtle text-danger">إعادة ضبط الصورة 
-                                                    </button>
-                                                </div>
-                                                <p class="mb-0">مسموح بـ JPG أو GIF أو PNG. الحجم الأقصى 800 كيلو</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 d-flex align-items-stretch">
-                                    <div class="card w-100 border position-relative overflow-hidden">
-                                        <div class="card-body p-4">
-                                            <h4 class="card-title"> تغيير كلمة المرور</h4>
-                                            <p class="card-subtitle mb-4">لتغيير كلمة المرور الخاصة بك، يرجى التأكيد هنا
-                                            </p>
-                                            <form>
-                                                <div class="mb-3">
-                                                    <label for="exampleInputPassword1" class="form-label"> كلمة المرور
-                                                        الحالي</label>
-                                                    <input type="password" class="form-control"
-                                                        id="exampleInputPassword1" value="12345678910">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="exampleInputPassword2" class="form-label"> كلمة المرور
-                                                        الجديدة</label>
-                                                    <input type="password" class="form-control"
-                                                        id="exampleInputPassword2" value="12345678910">
-                                                </div>
-                                                <div>
-                                                    <label for="exampleInputPassword3" class="form-label"> تأكيد كلمة
-                                                        المرور</label>
-                                                    <input type="password" class="form-control"
-                                                        id="exampleInputPassword3" value="12345678910">
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="card w-100 border position-relative overflow-hidden mb-0">
-                                        <div class="card-body p-4">
-                                            <h4 class="card-title">تفاصيل البيانات الشخصية</h4>
-                                            <p class="card-subtitle mb-4">لتغيير بياناتك الشخصية، قم بالتحرير والحفظ من
-                                                هنا
-                                            </p>
-                                            <form>
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label for="exampleInputtext"
-                                                                class="form-label">الإسم</label>
-                                                            <input type="text" class="form-control"
-                                                                id="exampleInputtext" placeholder="تقى ">
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="exampleInputtext1" class="form-label">البريد
-                                                                الإلكتروني</label>
-                                                            <input type="email" class="form-control"
-                                                                id="exampleInputtext1" placeholder="info@modernize.com">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label for="exampleInputtext2" class="form-label">
-                                                                اللقب</label>
-                                                            <input type="text" class="form-control"
-                                                                id="exampleInputtext2" placeholder="رأفت">
-                                                        </div>
 
-                                                        <div class="mb-3">
-                                                            <label for="exampleInputtext3" class="form-label">رقم
-                                                                الهاتف</label>
-                                                            <input type="text" class="form-control"
-                                                                id="exampleInputtext3" placeholder="+91 12345 65478">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div>
-                                                            <label for="exampleInputtext4"
-                                                                class="form-label">العنوان</label>
-                                                            <input type="text" class="form-control"
-                                                                id="exampleInputtext4"
-                                                                placeholder="814 Howard Street, 120065, India">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div
-                                                            class="d-flex align-items-center justify-content-end mt-4 gap-6">
-                                                            <button class="btn btn-primary">حفظ</button>
-                                                            <button
-                                                                class="btn bg-danger-subtle text-danger">إلغاء</button>
-                                                        </div>
-                                                    </div>
+                                <div class="col-sm-4 mt-2 mt-sm-0">
+                                    <div class="d-flex align-items-center pb-3 mb-4 border-bottom">
+                                        <div class="position-relative">
+                                            <img src="../assets/images/profile/user-1.jpg" alt="user1" width="54"
+                                                height="54" class="rounded-circle" />
+                                            <span
+                                                class="position-absolute bottom-0 end-0 p-1 badge rounded-pill bg-success">
+                                                <span class="visually-hidden">New alerts</span>
+                                            </span>
+                                        </div>
+                                        <div class="me-3">
+                                            <h6 class="fw-semibold mb-2">تقى رأفت </h6>
+                                            <p class="mb-0 fs-2">الأدمن </p>
+                                        </div>
+                                    </div>
+
+                                    <form class="position-relative mb-4">
+                                        <input type="text" class="form-control search-chat py-2 ps-5" id="text-srh"
+                                            placeholder="Search Contact" />
+                                        <i
+                                            class="ti ti-search position-absolute top-50 start-0 translate-middle-y fs-6 text-dark ms-3"></i>
+                                    </form>
+
+                                    <!-- Nav tabs -->
+                                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                        aria-orientation="vertical">
+                                        <a class="p-3 active bg-hover-light-black d-flex align-items-start justify-content-between"
+                                            id="v-pills-home-tab2" data-bs-toggle="pill" href="#v-pills-home2"
+                                            role="tab" aria-controls="v-pills-home2" aria-selected="true">
+                                            <div class="d-flex align-items-center">
+                                                <span class="position-relative">
+                                                    <img src="../assets/images/profile/user-2.jpg" alt="user-2"
+                                                        width="48" height="48" class="rounded-circle" />
+                                                    <span
+                                                        class="position-absolute bottom-0 end-0 p-1 badge rounded-pill bg-danger">
+                                                        <span class="visually-hidden">New alerts</span>
+                                                    </span>
+                                                </span>
+                                                <div class="me-3 d-inline-block w-75">
+                                                    <h6 class="mb-1 fw-semibold chat-title"
+                                                        data-username="James Anderson">
+                                                        تيسير </h6>
+                                                    <span class="fs-3 text-truncate text-dark fw-semibold d-block">
+                                                        الفستان شكله حلو...</span>
                                                 </div>
-                                            </form>
+                                            </div>
+                                            <p class="fs-2 mb-0 text-muted">30 دقيقة</p>
+                                        </a>
+                                        <a class="p-3 bg-hover-light-black d-flex align-items-start justify-content-between"
+                                            id="v-pills-profile-tab2" data-bs-toggle="pill" href="#v-pills-profile2"
+                                            role="tab" aria-controls="v-pills-profile2" aria-selected="false"
+                                            tabindex="-1">
+                                            <div class="d-flex align-items-center">
+                                                <span class="position-relative">
+                                                    <img src="../assets/images/profile/user-4.jpg" alt="user-4"
+                                                        width="48" height="48" class="rounded-circle" />
+                                                    <span
+                                                        class="position-absolute bottom-0 end-0 p-1 badge rounded-pill bg-success">
+                                                        <span class="visually-hidden">New alerts</span>
+                                                    </span>
+                                                </span>
+                                                <div class="me-3 d-inline-block w-75">
+                                                    <h6 class="mb-1 fw-semibold chat-title"
+                                                        data-username="James Anderson">
+                                                        تقى </h6>
+                                                    <span class="fs-3 text-truncate text-body-color d-block">انت:
+                                                        امس كان يوم جميل...</span>
+                                                </div>
+                                            </div>
+                                            <p class="fs-2 mb-0 text-muted">15 دقيقة</p>
+                                        </a>
+                                        <a class="p-3 bg-hover-light-black d-flex align-items-start justify-content-between"
+                                            id="v-pills-messages-tab2" data-bs-toggle="pill" href="#v-pills-messages2"
+                                            role="tab" aria-controls="v-pills-messages2" aria-selected="false"
+                                            tabindex="-1">
+                                            <div class="d-flex align-items-center">
+                                                <span class="position-relative">
+                                                    <img src="../assets/images/profile/user-8.jpg" alt="user-8"
+                                                        width="48" height="48" class="rounded-circle" />
+                                                    <span
+                                                        class="position-absolute bottom-0 end-0 p-1 badge rounded-pill bg-warning">
+                                                        <span class="visually-hidden">New alerts</span>
+                                                    </span>
+                                                </span>
+                                                <div class="me-3 d-inline-block w-75">
+                                                    <h6 class="mb-1 fw-semibold chat-title"
+                                                        data-username="James Anderson">
+                                                        حسن </h6>
+                                                    <span class="fs-3 text-truncate text-body-color d-block">ارسل
+                                                        صورة</span>
+                                                </div>
+                                            </div>
+                                            <p class="fs-2 mb-0 text-muted">2 ساعة</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade active show py-3" id="v-pills-home2" role="tabpanel"
+                                            aria-labelledby="v-pills-home-tab2">
+                                            <p>
+                                                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل
+                                                وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم
+                                                ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة
+                                                برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل
+                                                أو مرجع شكلي لهذه الأحرف.
+                                            </p>
+                                            <div class="d-flex align-items-center">
+                                                    <img width="200" height="200px" src="../assets/images/frontend-pages/blog-10.jpg"
+                                                        class="img-fluid notification-img ms-3">
+                                                    <video width="200" controls>
+                                                        <source src="https://www.w3schools.com/html/movie.mp4"
+                                                            type="video/mp4">
+                                                        متصفحك لا يدعم الفيديو.
+                                                    </video>
+                                                <!-- <div class="pdf">
+                                                <iframe src="example.pdf" width="100%" height="200px" style="border: none;">
+                                                    متصفحك لا يدعم ال pdf.
+                                                </iframe>
+                                            </div> -->
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane fade py-3" id="v-pills-profile2" role="tabpanel"
+                                            aria-labelledby="v-pills-profile-tab2">
+                                            <p>
+                                                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
+                                                القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة
+                                                التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ
+                                                طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا
+                                                يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء.
+                                            </p>
+
+                                        </div>
+                                        <div class="tab-pane fade py-3" id="v-pills-messages2" role="tabpanel"
+                                            aria-labelledby="v-pills-messages-tab2">
+                                            <p>
+                                                هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم
+                                                تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن
+                                                كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك
+                                                أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص.
+
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
-
     </div>
 
 
@@ -2556,8 +2581,7 @@
 
     <!-- solar icons -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-    <script src="../assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="../assets/js/datatable/datatable.init.js"></script>
+    <script src="../assets/js/apps/chat.js"></script>
 </body>
 
 </html>
