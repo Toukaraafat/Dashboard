@@ -18,7 +18,13 @@
 </head>
 
 <body>
-
+  <style>
+    .side-logo {
+      height: 100px;
+      width: 100%;
+      object-fit: contain;
+    }
+  </style>
   <div id="main-wrapper">
     <div class="page-wrapper">
       <aside class="left-sidebar with-horizontal">
@@ -52,7 +58,7 @@
               <li class="sidebar-item">
                 <a class="sidebar-link primary-hover-bg" href="notifications.html" aria-expanded="false">
                   <iconify-icon icon="solar:file-text-line-duotone" class="fs-6 aside-icon"></iconify-icon>
-                  <span class="hide-menu pe-1"> إشعارات 
+                  <span class="hide-menu pe-1"> إشعارات
                   </span>
                 </a>
               </li>
@@ -73,19 +79,19 @@
               <li class="sidebar-item">
                 <a class="sidebar-link warning-hover-bg" href="settings.html" aria-expanded="false">
                   <iconify-icon icon="solar:bedside-table-2-line-duotone" class="fs-6 aside-icon"></iconify-icon>
-                  <span class="hide-menu pe-1">  الإعدادات
+                  <span class="hide-menu pe-1"> الإعدادات
                   </span>
                 </a>
               </li>
               <li class="sidebar-item">
                 <a class="sidebar-link warning-hover-bg" href="faqs.html" aria-expanded="false">
                   <iconify-icon icon="solar:bedside-table-2-line-duotone" class="fs-6 aside-icon"></iconify-icon>
-                  <span class="hide-menu pe-1">  الأسئلة المتكررة
+                  <span class="hide-menu pe-1"> الأسئلة المتكررة
                   </span>
                 </a>
               </li>
             </ul>
-            </nav>
+          </nav>
         </div>
       </aside>
       <!-- mobile sidebar -->
@@ -1696,7 +1702,7 @@
                           <iconify-icon icon="solar:cart-5-line-duotone" class="fs-7 text-success"></iconify-icon>
                         </div>
                         <div>
-                          <h6 class="mb-1 fs-4">33  عدد الاقساط المتبقية</h6>
+                          <h6 class="mb-1 fs-4">33 عدد الاقساط المتبقية</h6>
                         </div>
                       </li>
                     </ul>
@@ -1773,6 +1779,83 @@
 
           </div>
 
+          <a href="javascript:void(0)"
+            type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <div class="nav-icon-hover-bg rounded-circle ">
+              <i class="ti ti-align-justified fs-7"></i>
+            </div>
+          </a>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <img src="assets/images/logos/logo.jpg" alt="" class="side-logo">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body h-n80">
+              <nav id="sidebarnavh" class="sidebar-nav scroll-sidebar container-fluid">
+                <ul id="sidebarnav">
+                  <!-- =================== -->
+                  <!-- Dashboard -->
+                  <!-- =================== -->
+                  <li class="sidebar-item">
+                    <a class="sidebar-link primary-hover-bg" href="index.html" aria-expanded="false">
+                      <iconify-icon icon="solar:atom-line-duotone" class="fs-6 aside-icon"></iconify-icon>
+                      <span class="hide-menu pe-1">الرئيسية</span>
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="sidebar-link indigo-hover-bg" href="recent-transactions.html" aria-expanded="false">
+                      <iconify-icon icon="solar:archive-broken" class="fs-6 aside-icon"></iconify-icon>
+                      <span class="hide-menu pe-1"> أحدث العمليات
+                      </span>
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="sidebar-link warning-hover-bg" href="payments.html" aria-expanded="false">
+                      <iconify-icon icon="solar:document-text-line-duotone" class="fs-6 aside-icon"></iconify-icon>
+                      <span class="hide-menu pe-1"> المدفوعات</span>
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="sidebar-link primary-hover-bg" href="notifications.html" aria-expanded="false">
+                      <iconify-icon icon="solar:file-text-line-duotone" class="fs-6 aside-icon"></iconify-icon>
+                      <span class="hide-menu pe-1"> إشعارات
+                      </span>
+                    </a>
+                  </li>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="sidebar-link warning-hover-bg" href="customer-report.html" aria-expanded="false">
+                      <iconify-icon icon="solar:cpu-bolt-line-duotone" class="fs-6 aside-icon"></iconify-icon>
+                      <span class="hide-menu pe-1"> التقارير المالية
+                      </span>
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="sidebar-link success-hover-bg" href="support.html" aria-expanded="false">
+                      <iconify-icon icon="solar:book-2-line-duotone" class="fs-6 aside-icon"></iconify-icon>
+                      <span class="hide-menu pe-1"> الدعم الفني </span>
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="sidebar-link warning-hover-bg" href="settings.html" aria-expanded="false">
+                      <iconify-icon icon="solar:bedside-table-2-line-duotone" class="fs-6 aside-icon"></iconify-icon>
+                      <span class="hide-menu pe-1"> الإعدادات
+                      </span>
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="sidebar-link warning-hover-bg" href="faqs.html" aria-expanded="false">
+                      <iconify-icon icon="solar:bedside-table-2-line-duotone" class="fs-6 aside-icon"></iconify-icon>
+                      <span class="hide-menu pe-1"> الأسئلة المتكررة
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
     </div>
