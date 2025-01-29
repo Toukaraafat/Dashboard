@@ -53507,5 +53507,20 @@ input[type="file"] {
     margin-right: 20px;
 
 }
-
+.card-icon{
+   font-size: 3rem; 
+}
+.card-hover:hover{
+    background-color: rgb(204 214 220);
+}
 /* customer-dashboard */
+@media (max-width:430px) {
+    .card h5{
+        font-size: 0.7rem !important;
+    }
+}
+@media (max-width:330px) {
+    .card h5{
+        font-size: 0.5rem !important;
+    }
+}
